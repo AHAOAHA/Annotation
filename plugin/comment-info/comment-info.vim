@@ -1,7 +1,7 @@
 "***************************************************
 " Copyright(C) 2016-2019. All right reserved.
 " 
-" Filename: x.vim
+" Filename: comment-info.vim
 " Author: ahaoozhang
 " Date: 2019-07-02 09:21:30 (Tuesday)
 " Describe: 
@@ -15,7 +15,7 @@ func SetTitleShell()
 	call append(line(".") + 1, "# Copyright(C) 2016-" .strftime("%Y").". All right reserved.")
 	call append(line(".") + 2, "# ")
 	call append(line(".") + 3, "# Filename: ".expand("%:t"))
-	call append(line(".") + 4, "# Author: ahaoozhang")
+	call append(line(".") + 4, "# Author: ". $USER)
 	call append(line(".") + 5, "# Date: ".strftime("%Y-%m-%d %H:%M:%S (%A)"))
 	call append(line(".") + 6, "# Describe: ")
 	call append(line(".") + 7, "##################################################")
@@ -28,7 +28,7 @@ func SetTitleCPPCGO()
 	call append(line(".") + 0, " * Copyright(C) 2016-" .strftime("%Y").". All right reserved.")
 	call append(line(".") + 1, " * ")
 	call append(line(".") + 2, " * Filename: ".expand("%:t"))
-	call append(line(".") + 3, " * Author: ahaoozhang")
+	call append(line(".") + 3, " * Author: ".$USER)
 	call append(line(".") + 4, " * Date: ".strftime("%Y-%m-%d %H:%M:%S (%A)"))
 	call append(line(".") + 5, " * Describe: ")
 	call append(line(".") + 6, " *************************************************/")
@@ -41,7 +41,7 @@ func SetTitleVim()
 	call append(line(".") + 0, "\" Copyright(C) 2016-" .strftime("%Y").". All right reserved.")
 	call append(line(".") + 1, "\" ")
 	call append(line(".") + 2, "\" Filename: ".expand("%:t"))
-	call append(line(".") + 3, "\" Author: ahaoozhang")
+	call append(line(".") + 3, "\" Author: ".$USER)
 	call append(line(".") + 4, "\" Date: ".strftime("%Y-%m-%d %H:%M:%S (%A)"))
 	call append(line(".") + 5, "\" Describe: ")
 	call append(line(".") + 6, "\"***************************************************")
