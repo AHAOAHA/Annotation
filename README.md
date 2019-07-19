@@ -2,8 +2,8 @@
 
 #### 使用
 
-1. `git clone https://github.com/AHAOAHA/comment-info.git`
-2. `mv comment-info/plugin/comment-info ~/.vim/plugin/`
+1. `cd comment-info`
+2. `./install.sh`
 
 #### 当前支持
 
