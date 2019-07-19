@@ -1,3 +1,4 @@
 #!/bin/bash
-mv ./plugin/comment-info ~/.vim/plugin/
-rm -rf ./.git
+cp -rf ./plugin/comment-info ~/.vim/plugin/
+#rm -rf ./.git
+echo "install ok! :)"
