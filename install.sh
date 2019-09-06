@@ -7,6 +7,14 @@
 # Date: 2019-07-21 15:19:27 (星期日)
 # Describe: 
 ##################################################
+
+# 如果.vim不存在 创建之
+if [ ! -d "~/.vim" ]
+then
+mkdir ~/.vim
+fi
+
 cp -rf ./plugin/comment-info ~/.vim/plugin/
+
 #rm -rf ./.git
 echo "install ok! :)"

@@ -2,8 +2,9 @@
 
 #### 使用
 
-1. `cd comment-info`
-2. `./install.sh`
+1. `git clone https://github.com/AHAOAHA/comment-info.git`
+2. `cd comment-info`
+3. `./install.sh`
 
 #### 当前支持
 
