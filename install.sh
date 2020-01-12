@@ -9,9 +9,9 @@
 ##################################################
 
 # 如果.vim不存在 创建之
-if [ -d "~/.vim" ]
+if [ ! -d "~/.vim/plugin" ]
 then
-mkdir ~/.vim
+mkdir -p ~/.vim/plugin
 fi
 
 cp -rf ./plugin/comment-info ~/.vim/plugin/
