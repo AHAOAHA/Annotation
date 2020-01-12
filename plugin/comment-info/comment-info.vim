@@ -75,3 +75,4 @@ func SetTitle()
 		call SetTitleVim()
 	endif
 endfunc
+
