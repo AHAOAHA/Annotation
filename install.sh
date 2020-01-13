@@ -7,7 +7,7 @@
 # Date: 2019-07-21 15:19:27 (星期日)
 # Describe: 
 ##################################################
-install_dir="~/.vim/plugin/comment-info"
+install_dir=~/.vim/plugin/comment-info
 if [ ! -d "${install_dir}" ]
 then
 mkdir -p ${install_dir}
