@@ -13,6 +13,6 @@ if [ ! -d "${install_dir}" ]
 then
 mkdir -p ${install_dir}
 fi
-sed -i "s/SINCETIME/$SINCETIME/g" ./plugin/comment-info/*
 cp -rf ./plugin/comment-info/* ${install_dir}
+sed -i "s/SINCETIME/$SINCETIME/g" ${install_dir}/*
 echo "install ok! :)"
