@@ -12,7 +12,7 @@ plugin_name=Annotation
 plugin_file=annotation.vim
 plugin_dir=$HOME/${install_dir}/.vim/plugin/${plugin_name}
 
-plugin_raw=https://raw.githubusercontent.com/AHAOAHA/Annotation/dev/plugin/Annotation/annotation.vim
+plugin_raw=https://raw.githubusercontent.com/AHAOAHA/Annotation/master/plugin/Annotation/annotation.vim
 
 RED="\033[31m"
 BLUE="\033[34m"
