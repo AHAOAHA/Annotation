@@ -37,7 +37,7 @@ Install() {
     fi
     
     curl -fsSL ${plugin_raw} -o ${plugin_dir}/${plugin_file}
-    if [[ $? -gt 0 ]]l then
+    if [[ $? -gt 0 ]]; then
         Print ${RED} "安装失败"
         exit 1
     fi
