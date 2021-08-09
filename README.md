@@ -1,17 +1,16 @@
-#### comment-info：为代码添加头部注释信息
+# Annotation
 
-#### 使用
-##### 安装
+Linux平台vim插件，为新文件自动添加头部注释。
 
-1. `git clone https://github.com/AHAOAHA/comment-info.git`
-2. `cd comment-info`
-3. `./install.sh`
+## 安装&卸载
 
-##### 卸载
-1. `cd [your clone path]/comment-info`
-2. `./uninstall.sh`
+```bash
+git clone https://github.com/AHAOAHA/Annotation.git && cd Annotation
+```
 
-#### 当前支持
+
+
+## Support
 
 - C
 - C++
