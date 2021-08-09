@@ -2,10 +2,16 @@
 
 Linux平台vim插件，为新文件自动添加头部注释。
 
-## 安装&卸载
+## 安装
 
 ```bash
-git clone https://github.com/AHAOAHA/Annotation.git && cd Annotation
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/AHAOAHA/Annotation/master/install.sh)" -i
+```
+
+## 卸载
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/AHAOAHA/Annotation/master/install.sh)" -u
 ```
 
 

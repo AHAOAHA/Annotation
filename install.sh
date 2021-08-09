@@ -7,10 +7,12 @@
 # Date: 2019-07-21 15:19:27 (星期日)
 # Describe: 
 ##################################################
-base_dir=$(cd "$(dirname "$0")";pwd)
-install_dir=$HOME/.vim/plugin
+
 plugin_name=Annotation
-plugin_dir=${base_dir}/plugin/${plugin_name}
+plugin_file=annotation.vim
+plugin_dir=$HOME/${install_dir}/.vim/plugin/${plugin_name}
+
+plugin_raw=https://raw.githubusercontent.com/AHAOAHA/Annotation/dev/plugin/Annotation/annotation.vim
 
 RED="\033[31m"
 BLUE="\033[34m"
@@ -30,22 +32,21 @@ EOF
 }
 
 Install() {
-    if [ ! -d ${install_dir} ]; then
-        mkdir -p ${install_dir}
+    if [ ! -d ${plugin_dir} ]; then
+        mkdir -p ${plugin_dir}
     fi
     
-    if [ ! -d ${plugin_dir} ];then
-        Print ${RED} "安装包损坏!"
+    curl -fsSL ${plugin_raw} -o ${plugin_dir}/${plugin_file}
+    if [[ $? -gt 0 ]]l then
+        Print ${RED} "安装失败"
         exit 1
     fi
-    
-    cp -rf ${plugin_dir} ${install_dir}
     Print ${BLUE} "安装完成 =)"
 }
 
 Uninstall() {
-    if [ -d ${install_dir}/${plugin_name} ];then
-        rm -rf ${install_dir}/${plugin_name}
+    if [ -d ${plugin_dir}/${plugin_name} ];then
+        rm -rf ${plugin_dir}/${plugin_name}
     fi
     Print $BLUE "卸载完成 :)"
 }
