@@ -10,7 +10,7 @@
 
 plugin_name=Annotation
 plugin_file=annotation.vim
-plugin_dir=$HOME/${install_dir}/.vim/plugin/${plugin_name}
+plugin_dir=$HOME/.vim/plugin/${plugin_name}
 
 plugin_raw=https://raw.githubusercontent.com/AHAOAHA/Annotation/master/plugin/Annotation/annotation.vim
 
@@ -45,8 +45,12 @@ Install() {
 }
 
 Uninstall() {
-    if [ -d ${plugin_dir}/${plugin_name} ];then
-        rm -rf ${plugin_dir}/${plugin_name}
+    if [ -d ${plugin_dir} ];then
+        rm -rf ${plugin_dir}
+    fi
+    if [[ $? -gt 0 ]]; then
+        Print ${RED} "卸载失败"
+        exit 1
     fi
     Print $BLUE "卸载完成 :)"
 }
